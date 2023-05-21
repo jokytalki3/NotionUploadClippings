@@ -27,13 +27,12 @@ fs.readFile(filePath, async (err, inputD) => {
         // proceed to create
         insertPage(title, highlight)
     }
-    fs.unlink(filePath, function(){console.log('Cleared the File')})
 })
 
 
 function findPageByTitle(title, allPages) {
     for (let page of allPages) {
-        if (page.properties?.Name?.title[0]?.plain_text === title) {
+        if (page.properties?.Name?.title[0]?.text.content === title) {
             return page
         }
     }
