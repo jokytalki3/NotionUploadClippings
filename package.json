@@ -1,0 +1,26 @@
+{
+  "name": "script-for-sam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "uploadClippings.js",
+  "dependencies": {
+    "@notionhq/client": "^2.2.5",
+    "asynckit": "^0.4.0",
+    "combined-stream": "^1.0.8",
+    "delayed-stream": "^1.0.0",
+    "dotenv": "^16.0.3",
+    "form-data": "^3.0.1",
+    "mime-db": "^1.52.0",
+    "mime-types": "^2.1.35",
+    "node-fetch": "^2.6.11",
+    "tr46": "^0.0.3",
+    "webidl-conversions": "^3.0.1",
+    "whatwg-url": "^5.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
