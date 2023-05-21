@@ -27,7 +27,7 @@ fs.readFile(filePath, async (err, inputD) => {
         // proceed to create
         insertPage(title, highlight)
     }
-    fs.writeFile(filePath, '', function(){console.log('Cleared the File')})
+    fs.unlink(filePath, function(){console.log('Cleared the File')})
 })
 
 
